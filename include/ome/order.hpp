@@ -6,7 +6,7 @@ namespace ome {
 
 enum class Side { Buy, Sell };
 
-using Price = std::int64_t; // ticks (e.g. cents)
+using Price = std::uint64_t; // ticks (e.g. cents)
 
 struct Order {
     std::uint64_t id;

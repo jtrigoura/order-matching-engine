@@ -17,7 +17,7 @@ struct Trade {
 
 class OrderBook {
 public:
-    void add_order(Order order);     // NOTE: by value (we will move it into containers)
+    void add_order(Order);     // NOTE: by value (we will move it into containers)
     void match();                    // run matching until no crosses
     void print() const;
 

@@ -4,6 +4,7 @@
 CMakeFiles/order_matching_engine.dir/src/main.cpp.o: /home/jorge/dev/order-matching-engine/src/main.cpp \
   /home/jorge/dev/order-matching-engine/include/ome/order.hpp \
   /home/jorge/dev/order-matching-engine/include/ome/order_book.hpp \
+  /usr/include/c++/14/array \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -11,10 +12,15 @@ CMakeFiles/order_matching_engine.dir/src/main.cpp.o: /home/jorge/dev/order-match
   /usr/include/c++/14/bits/concept_check.h \
   /usr/include/c++/14/bits/cpp_type_traits.h \
   /usr/include/c++/14/bits/deque.tcc \
+  /usr/include/c++/14/bits/enable_special_members.h \
   /usr/include/c++/14/bits/erase_if.h \
   /usr/include/c++/14/bits/exception.h \
   /usr/include/c++/14/bits/exception_defines.h \
   /usr/include/c++/14/bits/functexcept.h \
+  /usr/include/c++/14/bits/functional_hash.h \
+  /usr/include/c++/14/bits/hash_bytes.h \
+  /usr/include/c++/14/bits/hashtable.h \
+  /usr/include/c++/14/bits/hashtable_policy.h \
   /usr/include/c++/14/bits/invoke.h \
   /usr/include/c++/14/bits/iterator_concepts.h \
   /usr/include/c++/14/bits/max_size_type.h \
@@ -31,7 +37,9 @@ CMakeFiles/order_matching_engine.dir/src/main.cpp.o: /home/jorge/dev/order-match
   /usr/include/c++/14/bits/ranges_util.h \
   /usr/include/c++/14/bits/refwrap.h \
   /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/std_function.h \
   /usr/include/c++/14/bits/stl_algobase.h \
+  /usr/include/c++/14/bits/stl_bvector.h \
   /usr/include/c++/14/bits/stl_construct.h \
   /usr/include/c++/14/bits/stl_deque.h \
   /usr/include/c++/14/bits/stl_function.h \
@@ -43,9 +51,12 @@ CMakeFiles/order_matching_engine.dir/src/main.cpp.o: /home/jorge/dev/order-match
   /usr/include/c++/14/bits/stl_pair.h \
   /usr/include/c++/14/bits/stl_tree.h \
   /usr/include/c++/14/bits/stl_uninitialized.h \
+  /usr/include/c++/14/bits/stl_vector.h \
+  /usr/include/c++/14/bits/unordered_map.h \
   /usr/include/c++/14/bits/uses_allocator.h \
   /usr/include/c++/14/bits/uses_allocator_args.h \
   /usr/include/c++/14/bits/utility.h \
+  /usr/include/c++/14/bits/vector.tcc \
   /usr/include/c++/14/bits/version.h \
   /usr/include/c++/14/compare \
   /usr/include/c++/14/concepts \
@@ -58,6 +69,7 @@ CMakeFiles/order_matching_engine.dir/src/main.cpp.o: /home/jorge/dev/order-match
   /usr/include/c++/14/ext/alloc_traits.h \
   /usr/include/c++/14/ext/numeric_traits.h \
   /usr/include/c++/14/ext/type_traits.h \
+  /usr/include/c++/14/functional \
   /usr/include/c++/14/initializer_list \
   /usr/include/c++/14/map \
   /usr/include/c++/14/new \
@@ -65,6 +77,9 @@ CMakeFiles/order_matching_engine.dir/src/main.cpp.o: /home/jorge/dev/order-match
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
+  /usr/include/c++/14/typeinfo \
+  /usr/include/c++/14/unordered_map \
+  /usr/include/c++/14/vector \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/stdc-predef.h \
@@ -96,6 +111,7 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/c++/14/array \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -111,6 +127,7 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
   /usr/include/c++/14/bits/cxxabi_forced.h \
   /usr/include/c++/14/bits/cxxabi_init_exception.h \
   /usr/include/c++/14/bits/deque.tcc \
+  /usr/include/c++/14/bits/enable_special_members.h \
   /usr/include/c++/14/bits/erase_if.h \
   /usr/include/c++/14/bits/exception.h \
   /usr/include/c++/14/bits/exception_defines.h \
@@ -118,6 +135,8 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
   /usr/include/c++/14/bits/functexcept.h \
   /usr/include/c++/14/bits/functional_hash.h \
   /usr/include/c++/14/bits/hash_bytes.h \
+  /usr/include/c++/14/bits/hashtable.h \
+  /usr/include/c++/14/bits/hashtable_policy.h \
   /usr/include/c++/14/bits/invoke.h \
   /usr/include/c++/14/bits/ios_base.h \
   /usr/include/c++/14/bits/istream.tcc \
@@ -146,7 +165,9 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
   /usr/include/c++/14/bits/refwrap.h \
   /usr/include/c++/14/bits/requires_hosted.h \
   /usr/include/c++/14/bits/std_abs.h \
+  /usr/include/c++/14/bits/std_function.h \
   /usr/include/c++/14/bits/stl_algobase.h \
+  /usr/include/c++/14/bits/stl_bvector.h \
   /usr/include/c++/14/bits/stl_construct.h \
   /usr/include/c++/14/bits/stl_deque.h \
   /usr/include/c++/14/bits/stl_function.h \
@@ -156,15 +177,19 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
   /usr/include/c++/14/bits/stl_map.h \
   /usr/include/c++/14/bits/stl_multimap.h \
   /usr/include/c++/14/bits/stl_pair.h \
+  /usr/include/c++/14/bits/stl_relops.h \
   /usr/include/c++/14/bits/stl_tree.h \
   /usr/include/c++/14/bits/stl_uninitialized.h \
+  /usr/include/c++/14/bits/stl_vector.h \
   /usr/include/c++/14/bits/streambuf.tcc \
   /usr/include/c++/14/bits/streambuf_iterator.h \
   /usr/include/c++/14/bits/string_view.tcc \
   /usr/include/c++/14/bits/stringfwd.h \
+  /usr/include/c++/14/bits/unordered_map.h \
   /usr/include/c++/14/bits/uses_allocator.h \
   /usr/include/c++/14/bits/uses_allocator_args.h \
   /usr/include/c++/14/bits/utility.h \
+  /usr/include/c++/14/bits/vector.tcc \
   /usr/include/c++/14/bits/version.h \
   /usr/include/c++/14/cctype \
   /usr/include/c++/14/cerrno \
@@ -187,6 +212,7 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
   /usr/include/c++/14/ext/numeric_traits.h \
   /usr/include/c++/14/ext/string_conversions.h \
   /usr/include/c++/14/ext/type_traits.h \
+  /usr/include/c++/14/functional \
   /usr/include/c++/14/initializer_list \
   /usr/include/c++/14/ios \
   /usr/include/c++/14/iosfwd \
@@ -205,6 +231,9 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
   /usr/include/c++/14/typeinfo \
+  /usr/include/c++/14/unordered_map \
+  /usr/include/c++/14/utility \
+  /usr/include/c++/14/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -321,8 +350,6 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
@@ -377,8 +404,6 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
@@ -405,7 +430,7 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 
 /usr/include/ctype.h:
 
-/usr/include/c++/14/typeinfo:
+/usr/include/c++/14/utility:
 
 /usr/include/c++/14/string:
 
@@ -417,27 +442,21 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 
 /usr/include/c++/14/ext/string_conversions.h:
 
-/usr/include/c++/14/ext/atomicity.h:
+/usr/include/c++/14/exception:
 
-/usr/include/c++/14/map:
+/usr/include/c++/14/cwctype:
 
-/usr/include/c++/14/bits/allocator.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
-/usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h:
+/usr/include/c++/14/system_error:
 
-/usr/include/c++/14/initializer_list:
+/usr/include/c++/14/cstdlib:
 
-/usr/include/c++/14/ext/type_traits.h:
+/usr/include/c++/14/cstdio:
 
-/usr/include/c++/14/bits/ranges_cmp.h:
+/usr/include/c++/14/cerrno:
 
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/14/cstdint:
-
-/usr/include/c++/14/bits/stl_function.h:
-
-/usr/include/c++/14/cstddef:
+/usr/include/c++/14/bits/streambuf_iterator.h:
 
 /usr/include/c++/14/bits/version.h:
 
@@ -445,27 +464,33 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 
 /usr/include/c++/14/debug/debug.h:
 
+/usr/include/c++/14/bits/vector.tcc:
+
 /usr/include/c++/14/bits/uses_allocator.h:
 
 /usr/include/endian.h:
 
 /usr/include/c++/14/bits/localefwd.h:
 
-/usr/include/c++/14/bits/stl_tree.h:
+/usr/include/c++/14/bits/stl_function.h:
 
-/usr/include/c++/14/bit:
+/usr/include/c++/14/cstdint:
 
-/usr/include/c++/14/bits/stl_map.h:
+/usr/include/c++/14/ostream:
 
-/usr/include/x86_64-linux-gnu/c++/14/bits/ctype_inline.h:
+/usr/include/c++/14/clocale:
 
-/usr/include/c++/14/deque:
-
-/usr/include/c++/14/bits/stl_deque.h:
-
-/usr/include/features.h:
+/usr/include/c++/14/bits/basic_string.tcc:
 
 /usr/include/c++/14/concepts:
+
+/usr/include/c++/14/cctype:
+
+/usr/include/c++/14/bits/exception.h:
+
+/usr/include/c++/14/bits/ranges_util.h:
+
+/usr/include/c++/14/bits/memory_resource.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
@@ -473,7 +498,49 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 
 /usr/include/c++/14/bits/requires_hosted.h:
 
-/usr/include/c++/14/debug/assertions.h:
+/usr/include/c++/14/bits/refwrap.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/c++/14/bits/ranges_cmp.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/c++/14/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/14/ext/numeric_traits.h:
+
+/usr/include/c++/14/bits/uses_allocator_args.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h:
+
+/usr/include/c++/14/bits/range_access.h:
+
+/usr/include/c++/14/bits/utility.h:
+
+/usr/include/c++/14/bits/move.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/c++/14/bits/locale_classes.tcc:
+
+/usr/include/c++/14/bits/node_handle.h:
+
+/usr/include/c++/14/bits/memoryfwd.h:
+
+/usr/include/c++/14/bits/stringfwd.h:
+
+/usr/include/c++/14/bits/deque.tcc:
+
+/usr/include/c++/14/ext/type_traits.h:
+
+/usr/include/c++/14/bits/stl_vector.h:
+
+/usr/include/c++/14/bits/stl_bvector.h:
+
+/usr/include/c++/14/bit:
+
+/usr/include/c++/14/bits/stl_tree.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
@@ -483,11 +550,39 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 
 /usr/include/c++/14/bits/stl_multimap.h:
 
+/usr/include/c++/14/bits/unordered_map.h:
+
+/home/jorge/dev/order-matching-engine/include/ome/order_book.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/c++/14/bits/stl_uninitialized.h:
 
 /home/jorge/dev/order-matching-engine/include/ome/order.hpp:
+
+/usr/include/c++/14/bits/allocator.h:
+
+/usr/include/c++/14/ext/atomicity.h:
+
+/usr/include/c++/14/map:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/c++/14/vector:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h:
+
+/usr/include/c++/14/backward/binders.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/c++/14/bits/ptr_traits.h:
+
+/usr/include/alloca.h:
+
+/usr/include/pthread.h:
+
+/usr/include/c++/14/bits/functexcept.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
@@ -497,39 +592,9 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 
 /usr/include/c++/14/bits/basic_string.h:
 
-/usr/include/c++/14/bits/uses_allocator_args.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h:
-
-/usr/include/c++/14/bits/range_access.h:
-
-/usr/include/c++/14/backward/binders.h:
-
-/home/jorge/dev/order-matching-engine/include/ome/order_book.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/c++/14/ext/numeric_traits.h:
-
-/usr/include/c++/14/bits/stl_iterator_base_funcs.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/c++/14/ext/alloc_traits.h:
-
-/usr/include/c++/14/bits/invoke.h:
-
-/home/jorge/dev/order-matching-engine/src/main.cpp:
-
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/c++/14/bits/exception_defines.h:
-
-/usr/include/pthread.h:
-
-/usr/include/c++/14/bits/functexcept.h:
-
-/usr/include/c++/14/cwctype:
 
 /usr/include/c++/14/bits/stl_construct.h:
 
@@ -537,41 +602,55 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 
 /usr/include/c++/14/bits/predefined_ops.h:
 
-/usr/include/c++/14/bits/memoryfwd.h:
+/usr/include/c++/14/bits/enable_special_members.h:
 
-/usr/include/c++/14/bits/node_handle.h:
+/usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/include/c++/14/bits/memory_resource.h:
+/usr/include/c++/14/bits/functional_hash.h:
 
-/usr/include/c++/14/bits/ranges_util.h:
+/usr/include/c++/14/bits/stl_map.h:
 
-/usr/include/c++/14/bits/refwrap.h:
+/usr/include/c++/14/array:
 
-/usr/include/c++/14/exception:
+/usr/include/c++/14/bits/hashtable.h:
 
-/usr/include/c++/14/bits/move.h:
+/home/jorge/dev/order-matching-engine/src/main.cpp:
 
-/usr/include/c++/14/bits/utility.h:
+/usr/include/c++/14/bits/invoke.h:
 
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-/usr/include/c++/14/bits/locale_classes.tcc:
+/usr/include/c++/14/bits/hashtable_policy.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+/usr/include/x86_64-linux-gnu/c++/14/bits/ctype_inline.h:
 
-/usr/include/c++/14/bits/ptr_traits.h:
+/usr/include/c++/14/bits/stl_deque.h:
 
-/usr/include/alloca.h:
+/usr/include/c++/14/deque:
+
+/usr/include/stdc-predef.h:
 
 /usr/include/c++/14/bits/ranges_base.h:
 
-/usr/include/c++/14/ext/aligned_buffer.h:
+/usr/include/c++/14/cstddef:
+
+/usr/include/c++/14/debug/assertions.h:
+
+/usr/include/c++/14/ext/alloc_traits.h:
+
+/usr/include/c++/14/unordered_map:
+
+/usr/include/features.h:
+
+/usr/include/c++/14/functional:
+
+/usr/include/c++/14/initializer_list:
 
 /usr/include/c++/14/bits/max_size_type.h:
 
-/usr/include/c++/14/new:
+/usr/include/c++/14/ext/aligned_buffer.h:
 
-/usr/include/c++/14/bits/streambuf_iterator.h:
+/usr/include/c++/14/new:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -583,9 +662,13 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/include/c++/14/bits/exception.h:
+/usr/include/c++/14/bits/hash_bytes.h:
 
-/usr/include/c++/14/cctype:
+/usr/include/c++/14/bits/char_traits.h:
+
+/usr/include/c++/14/typeinfo:
+
+/usr/include/c++/14/bits/stl_relops.h:
 
 /usr/include/features-time64.h:
 
@@ -611,8 +694,6 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 
 /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h:
 
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
 /usr/include/c++/14/bits/cpp_type_traits.h:
 
 /usr/include/c++/14/bits/concept_check.h:
@@ -620,12 +701,6 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/c++/14/system_error:
-
-/usr/include/c++/14/cstdlib:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -639,6 +714,8 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h:
 
+/usr/include/c++/14/bits/std_function.h:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
@@ -649,9 +726,9 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/usr/include/c++/14/pstl/pstl_config.h:
-
 /usr/include/c++/14/bits/std_abs.h:
+
+/usr/include/c++/14/pstl/pstl_config.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
@@ -689,16 +766,6 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 
 /usr/include/c++/14/bits/locale_facets.tcc:
 
-/usr/include/c++/14/bits/deque.tcc:
-
-/usr/include/c++/14/bits/stringfwd.h:
-
-/usr/include/c++/14/bits/functional_hash.h:
-
-/usr/include/c++/14/bits/char_traits.h:
-
-/usr/include/c++/14/bits/hash_bytes.h:
-
 /usr/include/c++/14/bits/ios_base.h:
 
 /usr/include/c++/14/bits/istream.tcc:
@@ -719,16 +786,6 @@ CMakeFiles/order_matching_engine.dir/src/order_book.cpp.o: /home/jorge/dev/order
 
 /usr/include/c++/14/bits/nested_exception.h:
 
-/usr/include/c++/14/ostream:
-
-/usr/include/c++/14/bits/basic_string.tcc:
-
-/usr/include/c++/14/clocale:
-
 /usr/include/c++/14/bits/ostream.tcc:
 
 /usr/include/c++/14/bits/postypes.h:
-
-/usr/include/c++/14/cerrno:
-
-/usr/include/c++/14/cstdio:
