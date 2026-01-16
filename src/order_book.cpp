@@ -56,10 +56,13 @@ void OrderBook::match() {
         // Here we'll use best_ask for determinism.
         const Price trade_price = best_ask;
 
+        trades_.push_back(Trade{trade_price, traded_qty, buy.id, sell.id});
+
         std::cout << "TRADE price=" << trade_price
-                  << " qty=" << traded_qty
-                  << " buy_id=" << buy.id
-                  << " sell_id=" << sell.id << "\n";
+                << " qty=" << traded_qty
+                << " buy_id=" << buy.id
+                << " sell_id=" << sell.id << "\n";
+
 
         buy.quantity  -= traded_qty;
         sell.quantity -= traded_qty;

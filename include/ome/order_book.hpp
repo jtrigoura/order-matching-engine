@@ -4,7 +4,8 @@
 
 #include <map>
 #include <deque>
-#include <functional> // for std::greater
+#include <vector>
+#include <functional>
 
 namespace ome {
 
@@ -17,15 +18,20 @@ struct Trade {
 
 class OrderBook {
 public:
-    void add_order(Order);     // NOTE: by value (we will move it into containers)
-    void match();                    // run matching until no crosses
+    void add_order(Order order);
+    void match();
     void print() const;
+
+    const std::vector<Trade>& trades() const { return trades_; }
+    void clear_trades() { trades_.clear(); }
 
 private:
     using PriceLevel = std::deque<Order>;
 
     std::map<Price, PriceLevel, std::greater<Price>> bids_;
     std::map<Price, PriceLevel> asks_;
+
+    std::vector<Trade> trades_;
 
     void remove_empty_front_levels();
 };
