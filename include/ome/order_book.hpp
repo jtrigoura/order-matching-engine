@@ -6,6 +6,7 @@
 #include <deque>
 #include <vector>
 #include <functional>
+#include <cstdint>
 
 namespace ome {
 
@@ -19,6 +20,8 @@ struct Trade {
 class OrderBook {
 public:
     void add_order(Order order);
+    bool cancel_order(std::uint64_t order_id);
+
     void match();
     void print() const;
 
@@ -28,16 +31,22 @@ public:
 private:
     using PriceLevel = std::deque<Order>;
 
+    // bids: highest price first
     std::map<Price, PriceLevel, std::greater<Price>> bids_;
+    // asks: lowest price first
     std::map<Price, PriceLevel> asks_;
 
+    // trade log for testing/inspection
     std::vector<Trade> trades_;
 
     void remove_empty_front_levels();
 
-    private:
     bool has_cross() const;
-    bool execute_one_trade(); // returns true if a trade executed
+    bool execute_one_trade();
+
+    // cancellation helpers (overloads because map comparator differs)
+    bool cancel_in_side(std::map<Price, PriceLevel, std::greater<Price>>& side, std::uint64_t id);
+    bool cancel_in_side(std::map<Price, PriceLevel>& side, std::uint64_t id);
 };
 
 } // namespace ome

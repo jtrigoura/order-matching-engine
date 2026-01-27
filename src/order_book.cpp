@@ -88,5 +88,50 @@ bool OrderBook::execute_one_trade() {
 
     return true;
 }
+namespace {
+
+// Erase first order with matching id from a deque.
+// Returns true if removed.
+bool erase_from_level(std::deque<ome::Order>& q, std::uint64_t id) {
+    for (auto it = q.begin(); it != q.end(); ++it) {
+        if (it->id == id) {
+            q.erase(it);
+            return true;
+        }
+    }
+    return false;
+}
+
+} // namespace
+
+bool OrderBook::cancel_in_side(std::map<Price, PriceLevel, std::greater<Price>>& side, std::uint64_t id) {
+    for (auto it = side.begin(); it != side.end(); ++it) {
+        auto& level = it->second;
+        if (erase_from_level(level, id)) {
+            // cleanup empty level
+            if (level.empty()) side.erase(it);
+            return true;
+        }
+    }
+    return false;
+}
+
+bool OrderBook::cancel_in_side(std::map<Price, PriceLevel>& side, std::uint64_t id) {
+    for (auto it = side.begin(); it != side.end(); ++it) {
+        auto& level = it->second;
+        if (erase_from_level(level, id)) {
+            if (level.empty()) side.erase(it);
+            return true;
+        }
+    }
+    return false;
+}
+
+bool OrderBook::cancel_order(std::uint64_t order_id) {
+    // Try bids first, then asks
+    if (cancel_in_side(bids_, order_id)) return true;
+    if (cancel_in_side(asks_, order_id)) return true;
+    return false;
+}
 
 } // namespace ome
