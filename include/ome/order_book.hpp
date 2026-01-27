@@ -34,6 +34,10 @@ private:
     std::vector<Trade> trades_;
 
     void remove_empty_front_levels();
+
+    private:
+    bool has_cross() const;
+    bool execute_one_trade(); // returns true if a trade executed
 };
 
 } // namespace ome
