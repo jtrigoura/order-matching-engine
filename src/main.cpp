@@ -1,16 +1,29 @@
-#include "ome/order_book.hpp"
+#include "ome/engine.hpp"
+#include <thread>
 
 using namespace ome;
 
 int main() {
-    OrderBook book;
+    Engine engine;
+    engine.start();
 
-    // Prices in cents
-    book.add_order({1, Side::Buy, 10050, 10}); // $100.50 bid qty 10
-    book.add_order({2, Side::Buy, 10050, 5});  // same price, FIFO behind id=1
-    book.add_order({3, Side::Sell, 10000, 7}); // $100.00 ask qty 7  (crosses)
-    book.add_order({4, Side::Sell, 10050, 20}); // $100.50 ask qty 20 (crosses)
+    // Producer threads
+    std::thread p1([&]{
+        engine.submit(NewOrder{Order{1, Side::Buy, 10050, 10}});
+        engine.submit(NewOrder{Order{2, Side::Buy, 10050, 5}});
+    });
 
-    book.match();
-    book.print();
+    std::thread p2([&]{
+        engine.submit(NewOrder{Order{3, Side::Sell, 10000, 7}});
+        engine.submit(CancelOrder{2}); // cancel order 2
+        engine.submit(NewOrder{Order{4, Side::Sell, 10050, 20}});
+    });
+
+    p1.join();
+    p2.join();
+
+    engine.stop();
+
+    // After stop, safe to inspect
+    engine.book().print();
 }

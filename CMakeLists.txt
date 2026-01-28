@@ -8,6 +8,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # Core library
 add_library(ome
     src/order_book.cpp
+    src/engine.cpp
 )
 
 target_include_directories(ome
@@ -43,6 +44,7 @@ FetchContent_MakeAvailable(googletest)
 
 add_executable(ome_tests
     tests/order_book_tests.cpp
+    tests/engine_tests.cpp
 )
 
 target_link_libraries(ome_tests
@@ -51,3 +53,4 @@ target_link_libraries(ome_tests
 
 include(GoogleTest)
 gtest_discover_tests(ome_tests)
+
